@@ -1,18 +1,14 @@
 #include "counter.h"
 
-Counter::Counter() {
-    count = 0;
-}
-Counter::Counter(int value) {
-    count = value;
-}
-void Counter::inc() {
+CounterClass::Counter::Counter(int value) : count(value) {}
+
+void CounterClass::Counter::inc() {
     count++;
 }
-void Counter::dec() {
+void CounterClass::Counter::dec() {
     count--;
 }
-int Counter::get() {
+int CounterClass::Counter::get() {
     return count;
 }
 

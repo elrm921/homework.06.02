@@ -2,7 +2,7 @@
 #include "counter.h"
 
 int main() {
-    Counter cnt;
+    CounterClass::Counter cnt;
     std::string use_value;
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::cin >> use_value;
@@ -11,7 +11,7 @@ int main() {
         int value = 0;
         std::cout << "Введите начальное значение счётчика: ";
         std::cin >> value;
-        cnt = Counter(value);
+        cnt = CounterClass::Counter(value);
     }
     else if (use_value == "нет") {
         std::cout << "Начальное значение счётчика: 0\n";
